@@ -372,7 +372,9 @@
 
         // Fan control threshold
         window.FAN_THRESHOLD = 15; // Fan turns ON when temp < 15°C
-
+    </script>
+    <script src="sensor-detail.js"></script>
+    <script>
         // Override processData to add fan indicator logic
         const originalProcessData = window.processData;
         if (typeof processData !== 'undefined') {
@@ -396,7 +398,6 @@
             };
         }
     </script>
-    <script src="sensor-detail.js"></script>
 </body>
 
 </html>
